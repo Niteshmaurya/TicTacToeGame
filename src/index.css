@@ -1,0 +1,75 @@
+/* Body and Overall UI Styling */
+body {
+    background: #000; /* Black background */
+    font-family: 'Arial', sans-serif;
+}
+
+.tic-tac-toe {
+    width: fit-content;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.tic-tac-toe h1 {
+    color: white;
+    font-size: 36px;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+}
+
+/* Game Grid Styling */
+.tic-tac-toe .game {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.tic-tac-toe .square {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Circular grid cells */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white; /* Background for empty cells */
+    font-size: 48px;
+    cursor: pointer;
+}
+
+/* Player X (Cross) */
+.tic-tac-toe .x {
+    color: black;
+    font-size: 48px;
+}
+
+/* Player O (Checkmark) */
+.tic-tac-toe .o {
+    color: green;
+    font-size: 48px;
+}
+
+/* Winner Announcement Styling */
+.winner .text {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Reset Button Styling */
+.tic-tac-toe button {
+    padding: 12px 24px;
+    margin-top: 30px;
+    background: #ff4c4c; /* Red background */
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tic-tac-toe button:hover {
+    background: #ff1c1c;
+}
